@@ -5,7 +5,6 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/PPW2/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'), // Set the alias for the src directory
