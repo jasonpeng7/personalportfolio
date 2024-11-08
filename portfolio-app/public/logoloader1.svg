@@ -1,0 +1,34 @@
+  <?xml version="1.0" encoding="utf-8"?>
+  <svg version="1.1" x="0px" y="0px" viewBox="31.054 41.62 37.472 41.256" enable-background="new 0 0 100 100" style="filter: url('#drop-shadow-filter-1');" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+    <defs>
+      <filter id="drop-shadow-filter-1" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%" bx:preset="drop-shadow 1 -2 -1.5 1.5 0.11 #a549b858">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1.5"/>
+        <feOffset dx="-2" dy="-1.5"/>
+        <feComponentTransfer result="offsetblur">
+          <feFuncA id="spread-ctrl" type="linear" slope="0.22"/>
+        </feComponentTransfer>
+        <feFlood flood-color="#a549b858"/>
+        <feComposite in2="offsetblur" operator="in"/>
+        <feMerge>
+          <feMergeNode/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+      <filter id="filter-2" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%" bx:preset="drop-shadow 1 -1 -0.5 0.8 0.27 #001543">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="0.8"/>
+        <feOffset dx="-1" dy="-0.5"/>
+        <feComponentTransfer result="offsetblur">
+          <feFuncA id="feFuncA-2" type="linear" slope="0.54"/>
+        </feComponentTransfer>
+        <feFlood flood-color="#001543"/>
+        <feComposite in2="offsetblur" operator="in"/>
+        <feMerge>
+          <feMergeNode/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <text x="0" y="115" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif" style="white-space: pre;"> </text>
+    <text x="0" y="120" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif" style="white-space: pre;"> </text>
+    <path d="M 50.058 81.678 C 49.828 81.531 66.733 71.911 66.733 71.911 L 66.733 53.181 C 66.733 53.17 66.727 53.161 66.727 53.152 C 66.725 53.13 66.723 53.109 66.718 53.088 C 66.714 53.065 66.708 53.043 66.7 53.021 C 66.692 53 66.684 52.979 66.674 52.959 C 66.67 52.95 66.67 52.94 66.665 52.932 C 66.66 52.924 66.651 52.918 66.646 52.911 C 66.633 52.892 66.621 52.876 66.606 52.859 C 66.59 52.84 66.574 52.825 66.556 52.809 C 66.538 52.793 66.522 52.781 66.503 52.768 C 66.494 52.763 66.49 52.754 66.482 52.749 L 50.252 43.383 C 50.235 43.373 50.216 43.372 50.199 43.365 C 50.164 43.349 50.13 43.336 50.092 43.329 C 50.065 43.324 50.038 43.324 50.011 43.323 C 49.975 43.322 49.94 43.323 49.905 43.331 C 49.873 43.337 49.844 43.35 49.814 43.361 C 49.793 43.37 49.772 43.371 49.752 43.382 L 33.518 52.748 C 33.51 52.753 33.505 52.761 33.497 52.766 C 33.477 52.779 33.46 52.792 33.442 52.808 C 33.424 52.824 33.409 52.839 33.393 52.858 C 33.378 52.875 33.366 52.891 33.354 52.91 C 33.348 52.918 33.339 52.923 33.334 52.931 C 33.329 52.939 33.329 52.95 33.325 52.958 C 33.314 52.978 33.306 52.998 33.299 53.02 C 33.291 53.042 33.285 53.064 33.281 53.087 C 33.276 53.108 33.274 53.129 33.272 53.151 C 33.272 53.161 33.266 53.17 33.266 53.18 L 33.266 71.91 L 50.058 81.678 Z M 50.003 44.392 L 65.233 53.181 L 50.003 61.969 L 34.769 53.181 L 50.003 44.392 Z M 65.72 71.586 L 50.503 80.429 L 50.503 62.834 L 65.733 54.046 L 65.72 71.586 Z M 49.503 80.429 L 34.269 71.623 L 34.269 54.046 L 49.503 62.834 L 49.503 80.429 Z" style="fill: rgb(0, 21, 67); filter: url(&quot;#filter-2&quot;);"/>
+  </svg>

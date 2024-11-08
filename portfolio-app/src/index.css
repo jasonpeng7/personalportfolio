@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.FRL-regular {
+  font-family: "Frank Ruhl Libre", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color:rgb(0, 21, 67);
+}
+
+.FRL-bold {
+  font-family: "Frank Ruhl Libre", serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  color:rgb(0, 21, 67);
+}
+
+.raleway_regular {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color:rgb(249, 252, 255);
+}
+
+/* outsideFrame{
+  background-color: rgb(249, 252, 255);
+} */
+
+framercontainer {
+  /* background-color: rgba(185, 195, 221, 0.322); */
+  scrollbar-width: none;
+}
+
+framercontainer::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.content-container::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  z-index: 10;
+  position: fixed;
+  top: 1vh;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.clip-path-polygon {
+  clip-path: polygon(
+        0 0,           /* Top-left corner */
+        100% 0,        /* Top-right corner */
+        100% 100%,     /* Bottom-right corner */
+        0 100%,        /* Bottom-left corner */
+        0 53%,         /* Start creating the clipped section */
+        23.5% 53%,       /* Adjust the right side of the clipped section */
+        23.5% 0,         /* Move vertically up */
+        0 0            /* Close the path */
+    );
+
+}
