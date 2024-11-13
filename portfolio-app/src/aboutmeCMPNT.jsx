@@ -40,17 +40,20 @@ const TypeWriter = () => {
   }, [i, isDeleting, currentIndex, textArray]);
 
   return (
-        <div className="mx-4 sm:mx-16 FRL-regular flex flex-col text-5xl sm:text-7xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-8xl text-dark_navy">
-            <div className='mb-5 px-5 '>
-                I am
-            </div>
-            <div className='mb-20 md:mb-32 px-5 max-w-fit leading-snug break-words'>
-                {text}
-                <span className="cursor">|</span>
+        <div className="mx-4 sm:mx-16 flex flex-col text-dark_navy">
+            <div className='text-4xl md:text-5xl lg:text-6xl mb-14'>
+              <div className='lato-regular mb-5 px-5 '>
+                  I am
+              </div>
+              <div className='lato-regular px-5 max-w-fit leading-snug break-words'>
+                  {text}
+                  <span className="cursor">|</span>
+              </div>
             </div>
 
+
             <div className='px-5 '>
-                <p className='text-lg w-full md:text-2xl md:w-2/3 mb-14 md:mb-24'>
+                <p className='lato-thin text-sm w-full md:text-xl md:w-2/3 mb-14 md:mb-24'>
                     I am currently a second-year student at the University 
                     of California, Davis, pursuing a Bachelor of Science 
                     degree in Computer Science. Over the past year, I have 
@@ -63,7 +66,7 @@ const TypeWriter = () => {
             </div>
 
             <div className='px-5 '>
-                <p className='text-lg w-full md:text-2xl md:w-2/3'>
+                <p className='lato-thin text-sm w-full md:text-xl md:w-2/3'>
                     Looking ahead, I am eager to transition into a full-time 
                     software engineering role, where I can contribute to 
                     innovative projects and tackle complex challenges I 

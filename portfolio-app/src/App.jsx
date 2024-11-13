@@ -3,7 +3,6 @@ import './App.css'
 import { CoverDemo } from './coverCMPNT'
 import { HeroScrollDemo } from './containerscrollCMPNT'
 import { Intro } from './introCMPNT'
-import { LampDemo } from './lampCMPNT'
 import { TimelineDemo } from './timelineCMPNT'
 import { InfiniteMovingCardsDemo } from './movingcardsCMPNT'
 import LiquidSideNav from './menuCMPNT'
@@ -18,7 +17,6 @@ import { SparklesPreviewABOUTME, SparklesPreviewPROJECT } from './sparkleCMPNT'
 import { SparklesPreviewBACKGROUND } from './sparkleCMPNT'
 import { SparklesPreviewCONTACT } from './sparkleCMPNT'
 import Footer from './footerCMPNT'
-import { IconCloud } from './iconcloudCMPNT'
 
 
 function App() {

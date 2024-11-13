@@ -16,7 +16,7 @@ export function SparklesPreviewPROJECT() {
           particleColor="#000000"
         />
       </div>
-      <h1 className="z-20 FRL-bold text-center sm:text-left text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-bold text-dark_navy z-20 max-w-full break-words leading-tight">
+      <h1 className="z-20 lato-bold text-center sm:text-left text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-bold text-dark_navy z-20 max-w-full break-words leading-tight">
         Projects.
       </h1>
     </div>
@@ -38,7 +38,7 @@ export function SparklesPreviewBACKGROUND() {
           particleColor="#000000"
         />
       </div>
-      <h1 className="z-20 FRL-bold text-center sm:text-left text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-bold text-dark_navy z-20 max-w-full break-words leading-tight">
+      <h1 className="z-20 lato-bold text-center sm:text-left text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-bold text-dark_navy z-20 max-w-full break-words leading-tight">
         Background.
       </h1>
     </div>
@@ -60,7 +60,7 @@ export function SparklesPreviewABOUTME() {
           particleColor="#000000"
         />
       </div>
-      <h1 className="z-20 FRL-bold text-center sm:text-left text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-bold text-dark_navy z-20 max-w-full break-words leading-tight">
+      <h1 className="z-20 lato-bold text-center sm:text-left text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-bold text-dark_navy z-20 max-w-full break-words leading-tight">
         About Me.
       </h1>
     </div>
@@ -81,7 +81,7 @@ export function SparklesPreviewCONTACT() {
           particleColor="#000000"
         />
       </div>
-      <h1 className="z-20 FRL-bold text-center sm:text-left text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-bold text-dark_navy z-20 max-w-full break-words leading-tight">
+      <h1 className="z-20 lato-bold text-center sm:text-left text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-bold text-dark_navy z-20 max-w-full break-words leading-tight">
         Contact.
       </h1>
     </div>
