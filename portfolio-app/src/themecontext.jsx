@@ -4,7 +4,7 @@ export const themes = {
     default: "bg-extreme_light_blue",
     'Grey Fade': "bg-gradient-to-b from-neutral-grey3 to-white",
     'Slate Dots': "bg-[#B4BEC9] bg-[radial-gradient(#00091d33_1px,transparent_1px)] bg-[size:20px_20px]",
-    forest: "bg-[#2E6F40] bg-[size:20px_20px] opacity-100 shadow-[inset_0_0_100px_20px_rgba(27,77,46,0.6)]"
+    bone: "bg-[#dddddd] bg-[size:20px_20px] opacity-100 shadow-[inset_0_0_100px_20px_rgba(104,151,187,0.6)]"
 };
 
 const ThemeContext = createContext();

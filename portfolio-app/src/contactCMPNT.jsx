@@ -25,7 +25,7 @@ const TerminalContact = () => {
 
 const TerminalHeader = () => {
   return (
-    <div className="w-full p-3 bg-slate-900 flex items-center gap-1 sticky top-0">
+    <div className="w-full p-3 bg-dark_navy flex items-center gap-1 sticky top-0">
       <div className="w-3 h-3 rounded-full bg-red-500" />
       <div className="w-3 h-3 rounded-full bg-yellow-500" />
       <div className="w-3 h-3 rounded-full bg-green-500" />

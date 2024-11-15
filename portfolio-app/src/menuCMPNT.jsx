@@ -110,7 +110,7 @@ const Nav = ({ isOpen, setIsOpen, scrollToSection, refs }) => {
 const NavLink = ({ text, isOpen, setIsOpen, onClick }) => {
   return (
     <motion.button
-      className="inline-block z-10 text-white shadow-2xl w-fit font-black text-3xl md:text-6xl hover:text-black transition-colors"
+      className="inline-block z-10 text-white red-hat-extrabold shadow-2xl w-fit font-black text-3xl md:text-6xl hover:text-black transition-colors"
       animate={isOpen ? "open" : "closed"}
       variants={navLinkVariants}
       onClick= {onClick}

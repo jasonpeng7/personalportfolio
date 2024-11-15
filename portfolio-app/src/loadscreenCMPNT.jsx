@@ -7,7 +7,7 @@ const StackedLoadingOverlay = () => {
     const [fadeOut, setFadeOut] = useState(false);
 
 
-    const ANIMATION_DURATION = 4000;
+    const ANIMATION_DURATION = 3500;
     const SEQUENCE_INTERVAL = 250;
     
     const VERTICAL_OFFSET = 20;

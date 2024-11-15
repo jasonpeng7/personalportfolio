@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+.red-hat {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.red-hat-bold {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.red-hat-extrabold {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .FRL-regular {
   font-family: "Frank Ruhl Libre", serif;
   font-optical-sizing: auto;

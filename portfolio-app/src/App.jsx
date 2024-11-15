@@ -17,6 +17,7 @@ import { SparklesPreviewABOUTME, SparklesPreviewPROJECT } from './sparkleCMPNT'
 import { SparklesPreviewBACKGROUND } from './sparkleCMPNT'
 import { SparklesPreviewCONTACT } from './sparkleCMPNT'
 import Footer from './footerCMPNT'
+import { AppleCardsCarouselDemo } from './applecardsCMPNT'
 
 
 function App() {
@@ -90,15 +91,18 @@ function App() {
                         <TimelineDemo/>
                     </section>
 
-                    <section ref={projectRef} className='my-12 md: my-24'>
+                    <section ref={projectRef} className='md: my-24'>
                         <SparklesPreviewPROJECT/>
                     </section>
 
-                    <section className='flex flex-col 3xl:flex-row'>
-                        <BlogPostCarousel/>
+                    <section>
+                        <AppleCardsCarouselDemo/>
                     </section>
+                    {/* <section className='flex flex-col 3xl:flex-row'>
+                        <BlogPostCarousel/>
+                    </section> */}
 
-                    <section className='my-12 md: my-24'>
+                    <section className='md: my-24'>
                         <SparklesPreviewCONTACT/>
                     </section>
 
