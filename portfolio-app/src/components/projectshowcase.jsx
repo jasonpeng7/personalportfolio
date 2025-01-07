@@ -102,7 +102,7 @@ const ProjectShowcase = () => {
   const projects = [
     {
       title: "AggieMenus",
-      description: "A responsive web app for browsing and purchasing flooring options. It offers a seamless shopping experience with dynamic product listings and efficient cart management. Optimized for performance, it features reduced load times and scalable, modular components.",
+      description: "A responsive web app for browsing browsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingand purchasing flooring options. It offers a seamless shopping experience with dynamic product listings and efficient cart management. Optimized for performance, it features reduced load times and scalable, modular components.",
       tags: ["React", "Express", "Tailwind, Typescript"],
       imageUrl: "/api/placeholder/400/320",
       liveUrl: "https://example.com",
