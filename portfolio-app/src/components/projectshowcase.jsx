@@ -91,7 +91,7 @@ const ProjectShowcase = () => {
       description: "A dining menu tracker app for UC Davis students, featuring real-time updates and dietary filters. Built with TypeScript, React, and a Docker-based backend, it delivers a sleek, responsive UI and efficient data processing, enhancing user engagement and reducing latency.",
       tags: ["React", "Docker", "Tailwind", "Typescript"],
       imageUrl: "/api/placeholder/400/320",
-      githubUrl: "https://github.com/example",
+      githubUrl: "https://github.com/AggieWorks/aggiemenus",
       detailsUrl: "https://aggiemenus.org"
     },
     {
@@ -99,7 +99,7 @@ const ProjectShowcase = () => {
       description: "A full-stack web application for managing wishlists. Users can create, share, and collaborate on wishlists with friends and family. It features user authentication, real-time updates, and a responsive design for seamless user experience.",
       tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
       imageUrl: "/api/placeholder/400/320",
-      githubUrl: "https://github.com/example",
+      githubUrl: "https://github.com/jasonpeng7/wishlist",
       detailsUrl: "https://www.wishr.tech"
     },
     {
