@@ -14,6 +14,7 @@ import { SparklesPreviewBACKGROUND } from './sparkleCMPNT'
 import { SparklesPreviewCONTACT } from './sparkleCMPNT'
 import Footer from './footerCMPNT'
 import { AppleCardsCarouselDemo } from './applecardsCMPNT'
+import ProjectShowcase from './components/projectshowcase'
 
 
 function App() {
@@ -92,7 +93,7 @@ function App() {
                     </section>
 
                     <section>
-                        <AppleCardsCarouselDemo/>
+                        <ProjectShowcase/>
                     </section>
                     {/* <section className='flex flex-col 3xl:flex-row'>
                         <BlogPostCarousel/>
