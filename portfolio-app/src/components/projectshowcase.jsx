@@ -14,13 +14,13 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div
-      className="red-hat group relative flex h-[600px] flex-col overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl bg-slate-800"
+      className="red-hat group relative flex h-[400px] md:h-[600px] flex-col overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl bg-slate-800"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Project Image */}
-      <div className="relative h-64 shrink-0 overflow-hidden">
-        <div className="absolute inset-0 bg-slate-700 transition-opacity duration-300 group-hover:bg-slate-600" />
+      <div className="relative h-16 md:h-64 shrink-0 overflow-hidden">
+        <div className="absolute inset-0 rounded-lg bg-slate-700 transition-opacity duration-300 group-hover:bg-slate-600" />
       </div>
 
       {/* Content */}
@@ -42,7 +42,7 @@ const ProjectCard = ({ project }) => {
         </div>
 
         {/* Scrollable Description */}
-        <div className="mb-4 grow overflow-y-auto text-wrap w-full max-w-full h-32 max-h-32">
+        <div className="mb-4 grow overflow-y-auto text-wrap w-full max-w-full h-24 max-h-24 sm:h-32 sm:max-h-32">
           <p className="text-lg text-slate-400 break-words">
             {project.description}
           </p>
@@ -75,10 +75,6 @@ const ProjectCard = ({ project }) => {
           <span>View Details</span>
           <ArrowRight size={18} />
         </button>
-      </div>
-
-      <div className='flex text-white sm:hidden items-center justify-center pb-10'>
-        Click me!
       </div>
     </div>
   );
