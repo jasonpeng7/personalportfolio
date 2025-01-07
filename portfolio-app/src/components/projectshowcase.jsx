@@ -49,14 +49,14 @@ const ProjectCard = ({ project }) => {
         </div>
 
         {/* Scrollable Description */}
-        <div className="mb-4 grow overflow-y-auto text-wrap w-full max-w-full h-32 max-h-32">
-          <p className="text-lg text-slate-600 dark:text-slate-400 break-words">
+        <div className="mb-4 h-32 max-h-32 w-full max-w-full grow overflow-y-auto text-wrap">
+          <p className="break-words text-lg text-slate-600 dark:text-slate-400">
             {project.description}
           </p>
         </div>
 
-        {/* Links - Now with bottom margin to prevent overlap */}
-        <div className="mb-16 flex gap-4 absolute top-5 right-5">
+        {/* Links */}
+        <div className="absolute right-5 top-5 flex gap-4">
           {project.githubUrl && (
             <a
               href={project.githubUrl}
@@ -71,9 +71,9 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
 
-      {/* View Details Button */}
-      <div className={`absolute bottom-0 left-0 right-0 bg-gradient-to-t from-white to-transparent p-6 transition-all duration-300 dark:from-slate-800 ${
-        isHovered ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
+      {/* View Details Button - Always visible on mobile, hover on desktop */}
+      <div className={`absolute bottom-0 left-0 right-0 bg-gradient-to-t from-white to-transparent p-6 transition-all duration-300 dark:from-slate-800 md:translate-y-full md:opacity-0 ${
+        isHovered ? 'md:translate-y-0 md:opacity-100' : ''
       }`}>
         <button 
           onClick={handleViewDetails}
@@ -106,21 +106,21 @@ const ProjectShowcase = () => {
       detailsUrl: "https://www.wishr.tech"
     },
     {
-        title: "Flooring FBP",
-        description: "An E-commerce web app for browsing and purchasing flooring options. It offers a seamless shopping experience with dynamic product listings and efficient cart management. Optimized for performance, it features reduced load times and scalable, modular components.",
-        tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
-        imageUrl: "/api/placeholder/400/320",
-        githubUrl: "https://github.com/jasonpeng7/FullStackFlooringWebApp",
-        detailsUrl: "https://github.com/jasonpeng7/FullStackFlooringWebApp"
-      },
-      {
-        title: "Accio",
-        description: "A university-wide lost and found app with an efficient search system. Using Spring Boot, RESTful APIs, and a Next.js frontend, it offers quick item searches and an interactive user interface, aligning with Figma design systems for an enhanced user experience.",
-        tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
-        imageUrl: "/api/placeholder/400/320",
-        githubUrl: "https://github.com/Codelab-Davis/accio",
-        detailsUrl: "https://github.com/Codelab-Davis/accio"
-      }
+      title: "Flooring FBP",
+      description: "An E-commerce web app for browsing and purchasing flooring options. It offers a seamless shopping experience with dynamic product listings and efficient cart management. Optimized for performance, it features reduced load times and scalable, modular components.",
+      tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
+      imageUrl: "/api/placeholder/400/320",
+      githubUrl: "https://github.com/jasonpeng7/FullStackFlooringWebApp",
+      detailsUrl: "https://github.com/jasonpeng7/FullStackFlooringWebApp"
+    },
+    {
+      title: "Accio",
+      description: "A university-wide lost and found app with an efficient search system. Using Spring Boot, RESTful APIs, and a Next.js frontend, it offers quick item searches and an interactive user interface, aligning with Figma design systems for an enhanced user experience.",
+      tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
+      imageUrl: "/api/placeholder/400/320",
+      githubUrl: "https://github.com/Codelab-Davis/accio",
+      detailsUrl: "https://github.com/Codelab-Davis/accio"
+    }
   ];
 
   return (
