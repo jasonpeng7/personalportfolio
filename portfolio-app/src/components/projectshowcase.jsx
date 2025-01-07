@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div
-      className="group relative flex h-[600px] flex-col overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-slate-800"
+      className="red-hat group relative flex h-[600px] flex-col overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-slate-800"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -32,7 +32,7 @@ const ProjectCard = ({ project }) => {
 
       {/* Content */}
       <div className="flex grow flex-col p-6">
-        <h3 className="mb-2 text-2xl font-bold text-slate-900 dark:text-white">
+        <h3 className="mb-2 text-2xl font-bold text-white">
           {project.title}
         </h3>
         
@@ -41,7 +41,7 @@ const ProjectCard = ({ project }) => {
           {project.tags.map((tag, index) => (
             <span
               key={index}
-              className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-600 transition-colors duration-300 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-300"
+              className="rounded-full bg-slate-900 px-3 py-1 text-sm text-slate-300 transition-colors"
             >
               {tag}
             </span>
@@ -110,16 +110,16 @@ const ProjectShowcase = () => {
         description: "An E-commerce web app for browsing and purchasing flooring options. It offers a seamless shopping experience with dynamic product listings and efficient cart management. Optimized for performance, it features reduced load times and scalable, modular components.",
         tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
         imageUrl: "/api/placeholder/400/320",
-        githubUrl: "https://github.com/example",
-        detailsUrl: "https://www.wishr.tech"
+        githubUrl: "https://github.com/jasonpeng7/FullStackFlooringWebApp",
+        detailsUrl: "https://github.com/jasonpeng7/FullStackFlooringWebApp"
       },
       {
         title: "Accio",
         description: "A university-wide lost and found app with an efficient search system. Using Spring Boot, RESTful APIs, and a Next.js frontend, it offers quick item searches and an interactive user interface, aligning with Figma design systems for an enhanced user experience.",
         tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
         imageUrl: "/api/placeholder/400/320",
-        githubUrl: "https://github.com/example",
-        detailsUrl: "https://www.wishr.tech"
+        githubUrl: "https://github.com/Codelab-Davis/accio",
+        detailsUrl: "https://github.com/Codelab-Davis/accio"
       }
   ];
 
