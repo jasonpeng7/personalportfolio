@@ -65,7 +65,7 @@ const ProjectCard = ({ project }) => {
       </div>
 
       {/* View Details Button */}
-      <div className={`absolute bottom-0 left-0 right-0 bg-gradient-to-t from-white to-transparent p-6 transition-all duration-300 dark:from-slate-800 ${
+      <div className={`absolute bottom-0 left-0 right-0 bg-gradient-to-t to-transparent p-6 transition-all duration-300from-slate-800 ${
         isHovered ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
       }`}>
         <button 
