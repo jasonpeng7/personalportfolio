@@ -89,18 +89,18 @@ const ProjectShowcase = () => {
   const projects = [
     {
       title: "AggieMenus",
-      description: "A full-stack e-commerce platform built with React and Node.js, featuring user authentication, product management, and secure payment processing.",
-      tags: ["React", "Node.js", "MongoDB", "Tailwind"],
+      description: "A responsive web app for browsing and purchasing flooring options. It offers a seamless shopping experience with dynamic product listings and efficient cart management. Optimized for performance, it features reduced load times and scalable, modular components.",
+      tags: ["React", "Express", "Tailwind, Typescript"],
       imageUrl: "/api/placeholder/400/320",
       liveUrl: "https://example.com",
       githubUrl: "https://github.com/example"
     },
     {
-      title: "Weather Dashboard",
-      description: "Real-time weather tracking application with location services, interactive maps, and detailed forecast information for multiple cities.",
-      tags: ["React", "OpenWeather API", "Geolocation"],
+      title: "Wishlist Organizer",
+      description: "A full-stack web application for managing wishlists. Users can create, share, and collaborate on wishlists with friends and family. It features user authentication, real-time updates, and a responsive design for seamless user experience.",
+      tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
       imageUrl: "/api/placeholder/400/320",
-      liveUrl: "https://example.com",
+      liveUrl: "https://www.wishr.tech",
       githubUrl: "https://github.com/example"
     }
   ];
