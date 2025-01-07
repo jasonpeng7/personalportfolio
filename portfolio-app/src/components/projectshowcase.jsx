@@ -49,25 +49,14 @@ const ProjectCard = ({ project }) => {
         </div>
 
         {/* Scrollable Description */}
-        <div className="mb-4 grow overflow-y-auto">
-          <p className="text-lg text-slate-600 dark:text-slate-400">
+        <div className="mb-4 grow overflow-y-auto text-wrap w-full max-w-full h-32 max-h-32">
+          <p className="text-lg text-slate-600 dark:text-slate-400 break-words">
             {project.description}
           </p>
         </div>
 
         {/* Links - Now with bottom margin to prevent overlap */}
         <div className="mb-16 flex gap-4">
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-blue-600 transition-colors duration-300 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-            >
-              <ExternalLink size={18} />
-              <span>Live Demo</span>
-            </a>
-          )}
           {project.githubUrl && (
             <a
               href={project.githubUrl}
@@ -102,10 +91,9 @@ const ProjectShowcase = () => {
   const projects = [
     {
       title: "AggieMenus",
-      description: "A responsive web app for browsing browsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingand purchasing flooring options. It offers a seamless shopping experience with dynamic product listings and efficient cart management. Optimized for performance, it features reduced load times and scalable, modular components.",
+      description: "A responsive web app for browsing browsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsing and purchasing flooring options. It offers a seamless shopping experience with dynamic product listings and efficient cart management. Optimized for performance, it features reduced load times and scalable, modular components.",
       tags: ["React", "Express", "Tailwind, Typescript"],
       imageUrl: "/api/placeholder/400/320",
-      liveUrl: "https://example.com",
       githubUrl: "https://github.com/example",
       detailsUrl: "https://example.com/aggiemenus-details"
     },
@@ -114,7 +102,6 @@ const ProjectShowcase = () => {
       description: "A full-stack web application for managing wishlists. Users can create, share, and collaborate on wishlists with friends and family. It features user authentication, real-time updates, and a responsive design for seamless user experience.",
       tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
       imageUrl: "/api/placeholder/400/320",
-      liveUrl: "https://www.wishr.tech",
       githubUrl: "https://github.com/example",
       detailsUrl: "https://www.wishr.tech/about"
     }
