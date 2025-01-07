@@ -4,6 +4,15 @@ import { ExternalLink, Github, ArrowRight } from 'lucide-react';
 const ProjectCard = ({ project }) => {
   const [isHovered, setIsHovered] = useState(false);
 
+  const handleViewDetails = () => {
+    if (project.detailsUrl) {
+      window.open(project.detailsUrl, '_blank', 'noopener noreferrer');
+    } else {
+      // Fallback to live demo URL if no details URL is provided
+      project.liveUrl && window.open(project.liveUrl, '_blank', 'noopener noreferrer');
+    }
+  };
+
   return (
     <div
       className="group relative overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-slate-800"
@@ -75,7 +84,10 @@ const ProjectCard = ({ project }) => {
       <div className={`absolute bottom-0 left-0 right-0 bg-gradient-to-t from-white to-transparent p-6 transition-all duration-300 dark:from-slate-800 ${
         isHovered ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
       }`}>
-        <button className="flex w-full items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors duration-300 hover:bg-blue-700">
+        <button 
+          onClick={handleViewDetails}
+          className="flex w-full items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors duration-300 hover:bg-blue-700"
+        >
           <span>View Details</span>
           <ArrowRight size={18} />
         </button>
@@ -93,15 +105,17 @@ const ProjectShowcase = () => {
       tags: ["React", "Express", "Tailwind, Typescript"],
       imageUrl: "/api/placeholder/400/320",
       liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example"
+      githubUrl: "https://github.com/example",
+      detailsUrl: "https://aggiemenus.org" // Add details URL for each project
     },
     {
       title: "Wishlist Organizer",
       description: "A full-stack web application for managing wishlists. Users can create, share, and collaborate on wishlists with friends and family. It features user authentication, real-time updates, and a responsive design for seamless user experience.",
       tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
       imageUrl: "/api/placeholder/400/320",
-      liveUrl: "https://www.wishr.tech",
-      githubUrl: "https://github.com/example"
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/example",
+      detailsUrl: "https://www.wishr.tech" // Add details URL for each project
     }
   ];
 
