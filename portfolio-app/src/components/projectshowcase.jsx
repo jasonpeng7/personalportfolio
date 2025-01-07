@@ -8,19 +8,18 @@ const ProjectCard = ({ project }) => {
     if (project.detailsUrl) {
       window.open(project.detailsUrl, '_blank', 'noopener noreferrer');
     } else {
-      // Fallback to live demo URL if no details URL is provided
       project.liveUrl && window.open(project.liveUrl, '_blank', 'noopener noreferrer');
     }
   };
 
   return (
     <div
-      className="group relative overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-slate-800"
+      className="group relative flex h-[600px] flex-col overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-slate-800"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Project Image */}
-      <div className="relative h-64 overflow-hidden">
+      <div className="relative h-64 shrink-0 overflow-hidden">
         <img
           src={project.imageUrl || "/api/placeholder/400/320"}
           alt={project.title}
@@ -32,7 +31,7 @@ const ProjectCard = ({ project }) => {
       </div>
 
       {/* Content */}
-      <div className="p-6">
+      <div className="flex grow flex-col p-6">
         <h3 className="mb-2 text-2xl font-bold text-slate-900 dark:text-white">
           {project.title}
         </h3>
@@ -49,12 +48,15 @@ const ProjectCard = ({ project }) => {
           ))}
         </div>
 
-        <p className="mb-4 text-lg text-slate-600 dark:text-slate-400">
-          {project.description}
-        </p>
+        {/* Scrollable Description */}
+        <div className="mb-4 grow overflow-y-auto">
+          <p className="text-lg text-slate-600 dark:text-slate-400">
+            {project.description}
+          </p>
+        </div>
 
-        {/* Links */}
-        <div className="flex gap-4">
+        {/* Links - Now with bottom margin to prevent overlap */}
+        <div className="mb-16 flex gap-4">
           {project.liveUrl && (
             <a
               href={project.liveUrl}
@@ -97,7 +99,6 @@ const ProjectCard = ({ project }) => {
 };
 
 const ProjectShowcase = () => {
-  // Sample projects data - replace with your own
   const projects = [
     {
       title: "AggieMenus",
@@ -106,16 +107,16 @@ const ProjectShowcase = () => {
       imageUrl: "/api/placeholder/400/320",
       liveUrl: "https://example.com",
       githubUrl: "https://github.com/example",
-      detailsUrl: "https://aggiemenus.org" // Add details URL for each project
+      detailsUrl: "https://example.com/aggiemenus-details"
     },
     {
       title: "Wishlist Organizer",
       description: "A full-stack web application for managing wishlists. Users can create, share, and collaborate on wishlists with friends and family. It features user authentication, real-time updates, and a responsive design for seamless user experience.",
       tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
       imageUrl: "/api/placeholder/400/320",
-      liveUrl: "https://example.com",
+      liveUrl: "https://www.wishr.tech",
       githubUrl: "https://github.com/example",
-      detailsUrl: "https://www.wishr.tech" // Add details URL for each project
+      detailsUrl: "https://www.wishr.tech/about"
     }
   ];
 
