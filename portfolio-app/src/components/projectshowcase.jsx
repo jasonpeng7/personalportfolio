@@ -95,7 +95,7 @@ const ProjectShowcase = () => {
       tags: ["React", "Express", "Tailwind, Typescript"],
       imageUrl: "/api/placeholder/400/320",
       githubUrl: "https://github.com/example",
-      detailsUrl: "https://example.com/aggiemenus-details"
+      detailsUrl: "https://aggiemenus.org"
     },
     {
       title: "Wishlist Organizer",
@@ -103,7 +103,7 @@ const ProjectShowcase = () => {
       tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
       imageUrl: "/api/placeholder/400/320",
       githubUrl: "https://github.com/example",
-      detailsUrl: "https://www.wishr.tech/about"
+      detailsUrl: "https://www.wishr.tech"
     }
   ];
 
