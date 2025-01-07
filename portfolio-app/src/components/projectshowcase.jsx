@@ -56,7 +56,7 @@ const ProjectCard = ({ project }) => {
         </div>
 
         {/* Links - Now with bottom margin to prevent overlap */}
-        <div className="mb-16 flex gap-4">
+        <div className="mb-16 flex gap-4 absolute top-5 right-5">
           {project.githubUrl && (
             <a
               href={project.githubUrl}
@@ -91,8 +91,8 @@ const ProjectShowcase = () => {
   const projects = [
     {
       title: "AggieMenus",
-      description: "A responsive web app for browsing browsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsingbrowsing and purchasing flooring options. It offers a seamless shopping experience with dynamic product listings and efficient cart management. Optimized for performance, it features reduced load times and scalable, modular components.",
-      tags: ["React", "Express", "Tailwind, Typescript"],
+      description: "A dining menu tracker app for UC Davis students, featuring real-time updates and dietary filters. Built with TypeScript, React, and a Docker-based backend, it delivers a sleek, responsive UI and efficient data processing, enhancing user engagement and reducing latency.",
+      tags: ["React", "Express", "Tailwind", "Typescript"],
       imageUrl: "/api/placeholder/400/320",
       githubUrl: "https://github.com/example",
       detailsUrl: "https://aggiemenus.org"
@@ -104,7 +104,23 @@ const ProjectShowcase = () => {
       imageUrl: "/api/placeholder/400/320",
       githubUrl: "https://github.com/example",
       detailsUrl: "https://www.wishr.tech"
-    }
+    },
+    {
+        title: "Flooring FBP",
+        description: "An E-commerce web app for browsing and purchasing flooring options. It offers a seamless shopping experience with dynamic product listings and efficient cart management. Optimized for performance, it features reduced load times and scalable, modular components.",
+        tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
+        imageUrl: "/api/placeholder/400/320",
+        githubUrl: "https://github.com/example",
+        detailsUrl: "https://www.wishr.tech"
+      },
+      {
+        title: "Accio",
+        description: "A university-wide lost and found app with an efficient search system. Using Spring Boot, RESTful APIs, and a Next.js frontend, it offers quick item searches and an interactive user interface, aligning with Figma design systems for an enhanced user experience.",
+        tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
+        imageUrl: "/api/placeholder/400/320",
+        githubUrl: "https://github.com/example",
+        detailsUrl: "https://www.wishr.tech"
+      }
   ];
 
   return (
