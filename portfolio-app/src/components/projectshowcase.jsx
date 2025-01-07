@@ -43,7 +43,7 @@ const ProjectCard = ({ project }) => {
 
         {/* Scrollable Description */}
         <div className="mb-4 grow overflow-y-auto text-wrap w-full max-w-full h-32 max-h-32">
-          <p className="text-lg text-slate-600 dark:text-slate-400 break-words">
+          <p className="text-lg text-slate-400 break-words">
             {project.description}
           </p>
         </div>
