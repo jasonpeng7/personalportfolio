@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div
-      className="red-hat group relative flex h-[600px] flex-col overflow-hidden rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-slate-800"
+      className="red-hat group relative flex h-[600px] flex-col overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl bg-slate-800"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
