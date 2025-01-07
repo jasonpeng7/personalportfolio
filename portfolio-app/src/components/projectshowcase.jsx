@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
     >
       {/* Project Image */}
       <div className="relative h-64 shrink-0 overflow-hidden">
-        <div className="absolute inset-0 bg-slate-700 transition-opacity duration-300 group-hover:opacity-0" />
+        <div className="absolute inset-0 bg-slate-700 transition-opacity duration-300 group-hover:bg-slate-600" />
       </div>
 
       {/* Content */}
@@ -89,7 +89,7 @@ const ProjectShowcase = () => {
     {
       title: "AggieMenus",
       description: "A dining menu tracker app for UC Davis students, featuring real-time updates and dietary filters. Built with TypeScript, React, and a Docker-based backend, it delivers a sleek, responsive UI and efficient data processing, enhancing user engagement and reducing latency.",
-      tags: ["React", "Express", "Tailwind", "Typescript"],
+      tags: ["React", "Docker", "Tailwind", "Typescript"],
       imageUrl: "/api/placeholder/400/320",
       githubUrl: "https://github.com/example",
       detailsUrl: "https://aggiemenus.org"
@@ -105,7 +105,7 @@ const ProjectShowcase = () => {
     {
         title: "Flooring FBP",
         description: "An E-commerce web app for browsing and purchasing flooring options. It offers a seamless shopping experience with dynamic product listings and efficient cart management. Optimized for performance, it features reduced load times and scalable, modular components.",
-        tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
+        tags: ["React + Vite", "Javascript", "Express", "Tailwind"],
         imageUrl: "/api/placeholder/400/320",
         githubUrl: "https://github.com/jasonpeng7/FullStackFlooringWebApp",
         detailsUrl: "https://github.com/jasonpeng7/FullStackFlooringWebApp"
@@ -113,7 +113,7 @@ const ProjectShowcase = () => {
       {
         title: "Accio",
         description: "A university-wide lost and found app with an efficient search system. Using Spring Boot, RESTful APIs, and a Next.js frontend, it offers quick item searches and an interactive user interface, aligning with Figma design systems for an enhanced user experience.",
-        tags: ["Next.js", "Supabase", "Typescript", "Clerk Auth"],
+        tags: ["Next.js", "Supabase", "Typescript", "Java"],
         imageUrl: "/api/placeholder/400/320",
         githubUrl: "https://github.com/Codelab-Davis/accio",
         detailsUrl: "https://github.com/Codelab-Davis/accio"
